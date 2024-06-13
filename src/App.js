@@ -43,6 +43,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path='/' element={<Navigate to='/squidbuilder' />} />
         <Route path='/squadbuilder/room' element={ !isLoggedIn ? <Navigate to="/squadbuilder" /> :
           <Room onLogout={handleLogout} />
         }/>
