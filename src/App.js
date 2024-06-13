@@ -45,6 +45,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path='/squadbuilder' element={<Navigate to="/" />}/>
         <Route path='/room' element={ !isLoggedIn ? <Navigate to="/" /> :
           <Room onLogout={handleLogout} />
         }/>
