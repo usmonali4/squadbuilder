@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/samievghayrat/squidbuilder/frontend/static/css/main.1516f239.css",
+    "main.js": "/samievghayrat/squidbuilder/frontend/static/js/main.f0c87b4e.js",
+    "static/js/453.8ab44547.chunk.js": "/samievghayrat/squidbuilder/frontend/static/js/453.8ab44547.chunk.js",
+    "index.html": "/samievghayrat/squidbuilder/frontend/index.html",
+    "main.1516f239.css.map": "/samievghayrat/squidbuilder/frontend/static/css/main.1516f239.css.map",
+    "main.f0c87b4e.js.map": "/samievghayrat/squidbuilder/frontend/static/js/main.f0c87b4e.js.map",
+    "453.8ab44547.chunk.js.map": "/samievghayrat/squidbuilder/frontend/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1516f239.css",
+    "static/js/main.f0c87b4e.js"
+  ]
+}
