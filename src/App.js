@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import Room from './components/Room';
-import Activity from './components/Activity';  // Import Activity component
-import ProjectManagement from './components/task_manager/ProjectManagement';
 import MainRoom from './components/MainRoom';
 import './index';
 
