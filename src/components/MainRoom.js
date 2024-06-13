@@ -183,7 +183,7 @@ const MainRoom = ({onLogout}) => {
     return (
         <div className="dashboard">
             <button style={{ fontSize: '25px', width: 'auto', height: 'auto' }} className="logout-button" onClick={onLogout}>Logout</button>
-            <button style={{ fontSize: '25px', width: 'auto', height: 'auto' }} className="back-button" onClick={() => navigate('squadbuilder/room')}>Back</button>
+            <button style={{ fontSize: '25px', width: 'auto', height: 'auto' }} className="back-button" onClick={() => navigate('/squadbuilder/room')}>Back</button>
             <div className="sidebar" style={{
                 backgroundSize: 'auto',
                 backgroundPosition: 'center',
