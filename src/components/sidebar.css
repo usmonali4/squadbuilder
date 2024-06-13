@@ -1,0 +1,81 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  
+  .sidebar h1 {
+    margin: 0 0 2rem 0;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar nav a {
+    color: #fff;
+    margin: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .sidebar nav a:hover {
+    text-decoration: underline;
+  }
+
+.dashboard {
+    display: flex;
+  }
+  
+  .add-project-btn {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .add-project-btn:hover {
+    background-color: #555;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .no-project-selected {
+    text-align: center;
+  }
+  
+  .create-project-btn {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .create-project-btn:hover {
+    background-color: #555;
+  }
+  
+  .back-button {
+    position: absolute;
+    right: 150px;
+    top:10px;
+  }
+  
