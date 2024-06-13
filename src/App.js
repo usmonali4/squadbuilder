@@ -45,17 +45,14 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/squadbuilder' element={<Navigate to="/" />}/>
-        <Route path='/room' element={ !isLoggedIn ? <Navigate to="/" /> :
+        <Route path='/squadbuilder/room' element={ !isLoggedIn ? <Navigate to="/squadbuilder" /> :
           <Room onLogout={handleLogout} />
         }/>
 
-        <Route path='/activity' element={<Activity username={username} />} />  {/* New route */}
-        <Route path='/projects' element={<ProjectManagement />} />  {/* New route */}
-        <Route path='/room/:id' element={ !isLoggedIn ? <Navigate to="/" /> :
+        <Route path='/squadbuilder/room/:id' element={ !isLoggedIn ? <Navigate to="/squadbuilder" /> :
           <MainRoom onLogout={handleLogout} />} />
 
-        <Route path="/" element={ isLoggedIn ? <Navigate to="/room" /> :
+        <Route path="/squadbuilder" element={ isLoggedIn ? <Navigate to="/squadbuilder/room" /> :
             <div className="App">
             <h1 style={{fontSize: '45px'}}>Welcome to SquadBuilder</h1>
             <h3 style={{fontSize: '25px', textAlign: 'center', paddingBottom: '5px'}}>Let's do group activities together</h3>

@@ -40,7 +40,7 @@ const MainRoom = ({onLogout}) => {
                 console.error('There was an error fetching the room data!', error);
             });
         } else {
-            navigate('/');
+            navigate('/squadbuilder');
         }
     }, [roomId]);
 
@@ -183,7 +183,7 @@ const MainRoom = ({onLogout}) => {
     return (
         <div className="dashboard">
             <button style={{ fontSize: '25px', width: 'auto', height: 'auto' }} className="logout-button" onClick={onLogout}>Logout</button>
-            <button style={{ fontSize: '25px', width: 'auto', height: 'auto' }} className="back-button" onClick={() => navigate('/room')}>Back</button>
+            <button style={{ fontSize: '25px', width: 'auto', height: 'auto' }} className="back-button" onClick={() => navigate('squadbuilder/room')}>Back</button>
             <div className="sidebar" style={{
                 backgroundSize: 'auto',
                 backgroundPosition: 'center',

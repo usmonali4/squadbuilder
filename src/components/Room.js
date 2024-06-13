@@ -31,7 +31,7 @@ const Room = ({ onLogout }) => {
           console.error('There was an error fetching the room data!', error);
         });
     } else {
-      navigate('/'); 
+      navigate('/squadbuilder'); 
     }
   }, []);
 
@@ -45,7 +45,7 @@ const Room = ({ onLogout }) => {
       console.log(username, roomId);
       await axios.post(`/rooms/join/${roomId}?username=${username}`);
       
-      navigate(`/room/${roomId}`)
+      navigate(`/squadbuilder/room/${roomId}`)
     } catch (error) {
       alert("Joining failed");
       setRoomId('');
@@ -70,7 +70,7 @@ const Room = ({ onLogout }) => {
       setRoomDescription('');
       
       const roomId = response.data;
-      navigate(`/room/${roomId}`);
+      navigate(`/squadbuilder/room/${roomId}`);
     } catch (error) {
       alert("Creating room failed");
       console.log(error);
@@ -79,7 +79,7 @@ const Room = ({ onLogout }) => {
 
   const handleOnClickRoom = (roomId) => {
     console.log(roomId);
-    navigate(`/room/${roomId}`)
+    navigate(`/squadbuilder/room/${roomId}`)
   }
 
   
